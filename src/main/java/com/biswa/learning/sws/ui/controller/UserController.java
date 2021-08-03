@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class UserController {
 	@GetMapping(path="/{userId}")
 	public String getUser(@PathVariable String userId) {
-		return "get user called" + userId;
+		return "get user called for" + userId;
 	}
 	@PostMapping
 	public String createUser() {
